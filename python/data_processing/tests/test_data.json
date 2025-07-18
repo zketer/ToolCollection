@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "张三",
+      "email": "zhangsan@example.com",
+      "age": 25,
+      "department": "技术部",
+      "salary": 8000,
+      "skills": ["Python", "JavaScript", "SQL"],
+      "active": true,
+      "created_at": "2023-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "李四",
+      "email": "lisi@example.com",
+      "age": 30,
+      "department": "产品部",
+      "salary": 9000,
+      "skills": ["产品设计", "用户研究", "数据分析"],
+      "active": true,
+      "created_at": "2023-02-20T14:15:00Z"
+    },
+    {
+      "id": 3,
+      "name": "王五",
+      "email": "wangwu@example.com",
+      "age": 28,
+      "department": "技术部",
+      "salary": 8500,
+      "skills": ["Java", "Spring", "MySQL"],
+      "active": false,
+      "created_at": "2023-03-10T09:45:00Z"
+    },
+    {
+      "id": 4,
+      "name": "赵六",
+      "email": "zhaoliu@example.com",
+      "age": 35,
+      "department": "市场部",
+      "salary": 7500,
+      "skills": ["市场营销", "品牌推广", "社交媒体"],
+      "active": true,
+      "created_at": "2023-01-05T16:20:00Z"
+    },
+    {
+      "id": 5,
+      "name": "钱七",
+      "email": "qianqi@example.com",
+      "age": 27,
+      "department": "技术部",
+      "salary": 8200,
+      "skills": ["Python", "Django", "PostgreSQL"],
+      "active": true,
+      "created_at": "2023-04-12T11:30:00Z"
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "技术部",
+      "manager": "张三",
+      "budget": 500000,
+      "employee_count": 15
+    },
+    {
+      "id": 2,
+      "name": "产品部",
+      "manager": "李四",
+      "budget": 300000,
+      "employee_count": 8
+    },
+    {
+      "id": 3,
+      "name": "市场部",
+      "manager": "赵六",
+      "budget": 200000,
+      "employee_count": 6
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "电商平台开发",
+      "status": "进行中",
+      "start_date": "2023-01-01",
+      "end_date": "2023-06-30",
+      "budget": 200000,
+      "team": ["张三", "王五", "钱七"]
+    },
+    {
+      "id": 2,
+      "name": "移动应用设计",
+      "status": "已完成",
+      "start_date": "2023-02-01",
+      "end_date": "2023-04-30",
+      "budget": 150000,
+      "team": ["李四", "赵六"]
+    },
+    {
+      "id": 3,
+      "name": "数据分析系统",
+      "status": "计划中",
+      "start_date": "2023-05-01",
+      "end_date": "2023-08-31",
+      "budget": 100000,
+      "team": ["张三", "钱七"]
+    }
+  ],
+  "metadata": {
+    "total_users": 5,
+    "total_departments": 3,
+    "total_projects": 3,
+    "last_updated": "2023-12-01T10:00:00Z",
+    "version": "1.0.0"
+  }
+} 

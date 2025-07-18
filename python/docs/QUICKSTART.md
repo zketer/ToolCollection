@@ -25,7 +25,16 @@ python --version
 python -c "import pandas, requests, psutil; print('依赖安装成功！')"
 ```
 
-## 2. 快速体验
+## 🧪 测试数据目录规范
+- 每种工具类型目录下有 `tests/` 子目录，包含该类型所有工具的测试数据和测试脚本。
+- 例如：
+  - `data_processing/tests/test_data.csv`
+  - `data_processing/tests/test_data.json`
+  - `file_operations/tests/photo1.jpg`
+  - `web_tools/tests/test_crawl.json`
+- 新增工具时，请将相关测试数据和测试脚本放入对应类型的 `tests/` 子目录。
+
+## 快速体验示例
 
 ### 数据处理 - CSV处理器
 ```bash

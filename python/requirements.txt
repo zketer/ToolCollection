@@ -1,23 +1,32 @@
+# 核心依赖
+pandas>=1.5.0
+requests>=2.28.0
+psutil>=5.9.0
+
 # 数据处理工具依赖
-pandas>=1.3.0
-numpy>=1.21.0
-openpyxl>=3.0.0
+openpyxl>=3.0.10
+matplotlib>=3.6.0
+seaborn>=0.12.0
+scipy>=1.9.0
+scikit-learn>=1.1.0
+pyyaml>=6.0
+
+# 数据库工具依赖
+mysql-connector-python>=8.0.30
+psycopg2-binary>=2.9.0
 
 # 网络工具依赖
-requests>=2.25.0
-beautifulsoup4>=4.9.0
-lxml>=4.6.0
+beautifulsoup4>=4.11.0
+lxml>=4.9.0
 
-# 系统监控依赖
-psutil>=5.8.0
+# 自动化工具依赖
+schedule>=1.2.0
 
-# 代码格式化依赖
-black>=21.0.0
-flake8>=3.9.0
+# 开发工具依赖
+black>=22.0.0
+flake8>=5.0.0
 
-# 文件监控依赖
-watchdog>=2.1.0
-
-# 其他工具依赖
-tqdm>=4.62.0
-colorama>=0.4.4 
+# 可选依赖 (根据需要安装)
+# jupyter>=1.0.0  # 数据分析笔记本支持
+# flask>=2.3.0    # Web应用支持
+# flask-sqlalchemy>=3.0.0  # 数据库支持 
