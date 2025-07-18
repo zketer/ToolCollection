@@ -15,13 +15,13 @@
 
 **[🚀 快速开始](./python/docs/QUICKSTART.md)** | **[📖 详细文档](./python/README.md)** | **[💡 使用示例](./python/docs/examples.md)**
 
-### ☕ [Java 工具集](./java/)
+### ☕ [Java 工具集合](./java/)
 > **开发中，敬请期待！**
 
 - 计划支持：常用开发工具、构建工具、自动化脚本、数据处理、文件操作等
 - 结构将与 Python 工具集保持一致
 
-### [🐚 Shell 工具集](./shell/)  
+### [🐚 Shell 工具集合](./shell/)  
 - 常用 Bash/Shell 脚本，适用于开发、运维、数据处理等场景。
 
 ### 🔧 其他语言工具 (规划中)
