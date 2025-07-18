@@ -14,30 +14,30 @@
 - **[数据分析器](./data_processing/data_analyzer.py)** - 高级数据分析、统计、可视化
 - **[数据转换器](./data_processing/data_transformer.py)** - 多格式转换、特征工程、数据预处理
 - **[数据库管理器](./data_processing/database_manager.py)** - 数据库连接、查询、备份
-- **[数据验证器](./data_processing/data_validator.py)** - 数据质量检查、规则验证
-- **[数据采样器](./data_processing/data_sampler.py)** - 智能数据采样、平衡处理
-- **[数据合并器](./data_processing/data_merger.py)** - 多源数据合并、关联分析
-- **[数据导出器](./data_processing/data_exporter.py)** - 多格式数据导出、报表生成
+- **[数据验证器](./data_processing/data_validator.py)** - 数据质量检查、空值/唯一性/类型/自定义规则
+- **[数据采样器](./data_processing/data_sampler.py)** - 随机/分层/比例采样，支持多格式
+- **[数据合并器](./data_processing/data_merger.py)** - 多源数据合并，支持字段合并、追加、去重
+- **[数据导出器](./data_processing/data_exporter.py)** - 多格式导出，支持字段选择、过滤、排序
 
 ### 📁 [文件操作工具](./file_operations/)
 - **[批量重命名器](./file_operations/batch_renamer.py)** - 根据规则批量重命名文件和文件夹
 - **[文件监控器](./file_operations/file_monitor.py)** - 监控文件变化并执行相应操作
 - **[文件同步器](./file_operations/file_sync.py)** - 双向文件同步、增量同步
 - **[文件去重器](./file_operations/file_deduplicator.py)** - 检测和删除重复文件
-- **[文件压缩器](./file_operations/file_compressor.py)** - 批量压缩、解压缩文件
-- **[文件加密器](./file_operations/file_encryptor.py)** - 文件加密、解密工具
-- **[文件搜索器](./file_operations/file_searcher.py)** - 高级文件搜索、内容匹配
-- **[文件备份器](./file_operations/file_backup.py)** - 自动备份、版本管理
-- **[文件分类器](./file_operations/file_classifier.py)** - 智能文件分类、整理
-- **[文件校验器](./file_operations/file_validator.py)** - 文件完整性校验、修复
+- **[文件压缩器](./file_operations/file_compressor.py)** - 批量压缩/解压zip、tar.gz，递归、批量
+- **[文件加密器](./file_operations/file_encryptor.py)** - AES加密/解密，支持密码
+- **[文件搜索器](./file_operations/file_searcher.py)** - 按文件名/内容递归搜索，支持正则
+- **[文件备份器](./file_operations/file_backup.py)** - 全量/增量备份，带时间戳，多版本
+- **[文件分类器](./file_operations/file_classifier.py)** - 按类型/规则分类整理，支持移动/复制
+- **[文件校验器](./file_operations/file_validator.py)** - MD5/SHA1/SHA256校验，批量校验和生成
 
 ### 🌐 [网络工具](./web_tools/)
 - **[网页爬虫](./web_tools/web_crawler.py)** - 简单的网页数据抓取工具
 - **[API测试器](./web_tools/api_tester.py)** - RESTful API测试和调试工具
 - **[网络监控器](./web_tools/network_monitor.py)** - 网络连接监控、性能分析
-- **[代理检测器](./web_tools/proxy_checker.py)** - 代理服务器检测、验证
-- **[DNS查询器](./web_tools/dns_lookup.py)** - DNS记录查询、解析
-- **[端口扫描器](./web_tools/port_scanner.py)** - 端口扫描、服务检测
+- **[代理检测器](./web_tools/proxy_checker.py)** - 批量检测HTTP/HTTPS代理可用性
+- **[DNS查询器](./web_tools/dns_lookup.py)** - 查询A/AAAA/MX/CNAME/TXT等DNS记录，批量域名
+- **[端口扫描器](./web_tools/port_scanner.py)** - 多线程端口扫描，服务识别
 - **[网络诊断器](./web_tools/network_diagnostic.py)** - 网络故障诊断、分析
 - **[WebSocket客户端](./web_tools/websocket_client.py)** - WebSocket连接、测试
 - **[邮件发送器](./web_tools/email_sender.py)** - 批量邮件发送、模板支持

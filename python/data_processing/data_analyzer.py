@@ -16,12 +16,6 @@
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from scipy import stats
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
-from sklearn.decomposition import PCA
-from sklearn.cluster import KMeans
 import argparse
 import sys
 from pathlib import Path
@@ -34,9 +28,8 @@ import json
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# 设置matplotlib中文字体
-plt.rcParams['font.sans-serif'] = ['SimHei', 'Arial Unicode MS', 'DejaVu Sans']
-plt.rcParams['axes.unicode_minus'] = False
+# 删除全局 plt.rcParams 设置
+# 在用到 matplotlib 的函数内部设置 rcParams
 
 
 class DataAnalyzer:
@@ -135,6 +128,10 @@ class DataAnalyzer:
         correlation_matrix = numeric_data.corr(method=method)
         
         if plot:
+            import matplotlib.pyplot as plt
+            import seaborn as sns
+            plt.rcParams['font.sans-serif'] = ['SimHei', 'Arial Unicode MS', 'DejaVu Sans']
+            plt.rcParams['axes.unicode_minus'] = False
             plt.figure(figsize=(10, 8))
             sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', center=0,
                        square=True, linewidths=0.5)
@@ -167,6 +164,7 @@ class DataAnalyzer:
         numeric_data = self.data[columns]
         outliers = {}
         
+        from scipy import stats
         if method == 'iqr':
             for col in columns:
                 Q1 = numeric_data[col].quantile(0.25)
@@ -218,6 +216,10 @@ class DataAnalyzer:
         numeric_data = self.data[columns]
         distribution_results = {}
         
+        import matplotlib.pyplot as plt
+        from scipy import stats
+        plt.rcParams['font.sans-serif'] = ['SimHei', 'Arial Unicode MS', 'DejaVu Sans']
+        plt.rcParams['axes.unicode_minus'] = False
         for col in columns:
             data = numeric_data[col].dropna()
             
@@ -349,6 +351,13 @@ class DataAnalyzer:
             columns = self.data.select_dtypes(include=[np.number]).columns.tolist()
         
         numeric_data = self.data[columns].dropna()
+        
+        from sklearn.preprocessing import StandardScaler
+        from sklearn.decomposition import PCA
+        from sklearn.cluster import KMeans
+        import matplotlib.pyplot as plt
+        plt.rcParams['font.sans-serif'] = ['SimHei', 'Arial Unicode MS', 'DejaVu Sans']
+        plt.rcParams['axes.unicode_minus'] = False
         
         if method == 'pca':
             # 标准化数据

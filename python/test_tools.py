@@ -74,7 +74,11 @@ def test_data_processing_tools():
         ('excel_processor.py', ['--help']),
         ('data_analyzer.py', ['--help']),
         ('data_transformer.py', ['--help']),
-        ('database_manager.py', ['--help'])
+        ('database_manager.py', ['--help']),
+        ('data_validator.py', ['--help']),
+        ('data_sampler.py', ['--help']),
+        ('data_merger.py', ['--help']),
+        ('data_exporter.py', ['--help'])
     ]
     
     for tool, args in tools:
@@ -105,7 +109,13 @@ def test_file_operations_tools():
         ('batch_renamer.py', ['--help']),
         ('file_monitor.py', ['--help']),
         ('file_sync.py', ['--help']),
-        ('file_deduplicator.py', ['--help'])
+        ('file_deduplicator.py', ['--help']),
+        ('file_compressor.py', ['--help']),
+        ('file_encryptor.py', ['--help']),
+        ('file_searcher.py', ['--help']),
+        ('file_backup.py', ['--help']),
+        ('file_classifier.py', ['--help']),
+        ('file_validator.py', ['--help'])
     ]
     
     for tool, args in tools:
@@ -135,7 +145,10 @@ def test_web_tools():
     tools = [
         ('web_crawler.py', ['--help']),
         ('api_tester.py', ['--help']),
-        ('network_monitor.py', ['--help'])
+        ('network_monitor.py', ['--help']),
+        ('proxy_checker.py', ['--help']),
+        ('dns_lookup.py', ['--help']),
+        ('port_scanner.py', ['--help'])
     ]
     
     for tool, args in tools:
