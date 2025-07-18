@@ -21,8 +21,35 @@
 - 计划支持：常用开发工具、构建工具、自动化脚本、数据处理、文件操作等
 - 结构将与 Python 工具集保持一致
 
-### [🐚 Shell 工具集合](./shell/)  
-- 常用 Bash/Shell 脚本，适用于开发、运维、数据处理等场景。
+### [🐚 Shell 工具集合](./shell/)
+
+**功能丰富的 Bash/Shell 脚本集合，涵盖数据处理、文件操作、Web 工具、自动化和开发工具**
+
+- 📊 **数据处理**：CSV快速查看、JSON格式化、文本统计、批量去重、内容筛选、批量转换等
+- 📁 **文件操作**：批量重命名、文件查找、压缩解压、目录同步、哈希校验、空间统计、空文件查找等
+- 🌐 **Web 工具**：URL可用性检测、DNS查询、HTTP请求、IP归属地、端口扫描、代理检测等
+- 🤖 **自动化**：日志清理、目录备份、批量下载、目录监控、定时任务、自动备份、自动清理、自动报告、消息通知等
+- 🛠️ **开发工具**：系统信息、端口查杀、网络测速、环境变量对比、进程监控、Docker清理、Git助手、端口占用、环境导出等
+
+> 所有脚本均可直接运行，支持 --help 查看详细用法。
+
+**典型用法示例：**
+```bash
+# 查看系统信息
+./shell/dev_tools/sys_info.sh
+
+# 批量重命名文件
+./shell/file_operations/batch_rename.sh ./photos --prefix img_ --number
+
+# 日志清理并归档
+./shell/automation/log_cleaner.sh ./logs --days 7 --archive
+
+# 端口扫描
+./shell/web_tools/port_scanner.sh 127.0.0.1 --ports 1-1000
+
+# 目录同步
+./shell/file_operations/dir_sync.sh ./src ./dst --delete
+```
 
 ### 🔧 其他语言工具 (规划中)
 - **JavaScript/Node.js** - 前端和后端开发工具
@@ -51,6 +78,55 @@
 - 提供完整的测试用例
 - 支持自动化测试
 
+## 📊 工具概览
+
+| 类别 | 工具数量 | 主要功能 | 状态 |
+|------|----------|----------|------|
+| 🐍 Python | 50+ | 数据处理、文件操作、网络、自动化、开发 | ✅ 完成 |
+| 🐚 Shell  | 40+ | 批量处理、文件管理、网络工具、自动化 | ✅ 完成 |
+
+## 🎯 使用场景
+
+### 📊 数据处理场景
+- **批量处理CSV数据文件**
+  - Python: `python data_processing/csv_processor.py data.csv --summary`
+  - Shell: `./shell/data_processing/csv_parser.sh data.csv --head 10`
+- **分析和清理JSON数据**
+  - Python: `python data_processing/json_processor.py data.json --format`
+  - Shell: `./shell/data_processing/json_prettify.sh data.json --check`
+
+### 📁 文件管理场景
+- **批量重命名照片和文档**
+  - Python: `python file_operations/batch_renamer.py ./photos --name-pattern "photo_{n:03d}{ext}" --execute`
+  - Shell: `./shell/file_operations/batch_rename.sh ./photos --prefix img_ --number`
+- **目录同步与备份**
+  - Python: `python file_operations/file_sync.py ./source ./backup --mode one_way`
+  - Shell: `./shell/file_operations/dir_sync.sh ./src ./dst --delete`
+
+### 🌐 网络开发场景
+- **API接口测试和调试**
+  - Python: `python web_tools/api_tester.py https://api.example.com/data --method GET`
+  - Shell: `./shell/web_tools/http_request.sh https://api.example.com/data --method GET`
+- **端口扫描与代理检测**
+  - Python: `python web_tools/port_scanner.py 127.0.0.1 --ports 1-1000`
+  - Shell: `./shell/web_tools/port_scanner.sh 127.0.0.1 --ports 1-1000`
+
+### 🤖 系统管理场景
+- **定时备份与自动清理**
+  - Python: `python automation/backup_scheduler.py --schedule daily --source ./data --target ./backup`
+  - Shell: `./shell/automation/auto_backup.sh ./data ./backup --interval 60`
+- **日志分析和报告**
+  - Python: `python automation/log_analyzer.py ./logs --pattern "ERROR" --report`
+  - Shell: `./shell/automation/log_cleaner.sh ./logs --days 7 --archive`
+
+### 🛠️ 开发辅助场景
+- **环境变量导出与对比**
+  - Python: `python dev_tools/env_exporter.py .env`
+  - Shell: `./shell/dev_tools/env_exporter.sh .env`
+- **进程和端口管理**
+  - Python: `python automation/process_manager.py --list --kill zombie`
+  - Shell: `./shell/dev_tools/port_killer.sh 8080`
+
 ## 🚀 快速体验
 
 ### Python工具快速体验
@@ -75,52 +151,23 @@ python automation/system_monitor.py --once
 python web_tools/api_tester.py https://api.github.com/users/octocat --method GET
 ```
 
-## 📊 工具概览
+### Shell工具快速体验
+```bash
+# 进入Shell工具目录
+cd shell
 
-| 类别 | 工具数量 | 主要功能 | 状态 |
-|------|----------|----------|------|
-| 📊 数据处理 | 10个 | CSV/JSON/Excel处理、数据分析、格式转换 | ✅ 完成 |
-| 📁 文件操作 | 10个 | 重命名、监控、同步、压缩、加密 | ✅ 完成 |
-| 🌐 网络工具 | 10个 | 爬虫、API测试、网络监控、DNS查询 | ✅ 完成 |
-| 🤖 自动化 | 10个 | 系统监控、任务调度、日志分析 | ✅ 完成 |
-| 🛠️ 开发工具 | 10个 | 代码格式化、生成、测试、文档 | ✅ 完成 |
+# 查看系统信息
+./dev_tools/sys_info.sh
 
-## 🎯 使用场景
+# 批量重命名文件
+./file_operations/batch_rename.sh ./photos --prefix img_ --number
 
-### 📊 数据处理场景
-- **批量处理CSV数据文件** - 使用CSV处理器清洗和转换数据
-- **分析和清理JSON数据** - 使用JSON处理器验证和格式化数据
-- **Excel文件自动化处理** - 使用Excel处理器生成图表和透视表
-- **高级数据分析和可视化** - 使用数据分析器进行统计分析
-- **多格式数据转换** - 使用数据转换器进行格式转换和预处理
+# 端口扫描
+./web_tools/port_scanner.sh 127.0.0.1 --ports 1-1000
 
-### 📁 文件管理场景
-- **批量重命名照片和文档** - 使用批量重命名器整理文件
-- **监控项目文件变化** - 使用文件监控器跟踪文件变更
-- **多设备文件同步** - 使用文件同步器保持文件一致
-- **智能文件分类和备份** - 使用文件分类器和备份器
-- **文件压缩和加密** - 使用文件压缩器和加密器
-
-### 🌐 网络开发场景
-- **抓取网页数据用于分析** - 使用网页爬虫获取数据
-- **API接口测试和调试** - 使用API测试器验证接口
-- **网络连接监控** - 使用网络监控器分析性能
-- **DNS记录查询** - 使用DNS查询器解析域名
-- **代理服务器检测** - 使用代理检测器验证代理
-
-### 🤖 系统管理场景
-- **监控系统资源使用** - 使用系统监控器跟踪性能
-- **自动化系统维护** - 使用任务调度器执行定时任务
-- **日志分析和报告** - 使用日志分析器处理日志
-- **进程和服务管理** - 使用进程管理器和服务管理器
-- **系统性能优化** - 使用性能分析器和资源清理器
-
-### 🛠️ 开发辅助场景
-- **保持代码风格一致** - 使用代码格式化器统一代码风格
-- **自动化测试执行** - 使用测试运行器批量运行测试
-- **代码质量检查** - 使用代码审查器检查代码质量
-- **自动化文档生成** - 使用文档生成器生成文档
-- **持续集成和部署** - 使用部署助手自动化部署
+# 目录同步
+./file_operations/dir_sync.sh ./src ./dst --delete
+```
 
 ## 📚 文档导航
 
@@ -138,6 +185,9 @@ python web_tools/api_tester.py https://api.github.com/users/octocat --method GET
   - `python/file_operations/tests/photo1.jpg`
   - `python/web_tools/tests/test_crawl.json`
 - 新增工具时，请将相关测试数据和测试脚本放入对应类型的 `tests/` 子目录。
+
+### 🐚 Shell工具文档
+- **[📖 主文档](./shell/README.md)** - 完整的脚本分类、功能和用法说明
 
 ## 🔧 环境要求
 
