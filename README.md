@@ -5,6 +5,8 @@
 ## 📋 目录导航
 
 ### 🐍 [Python 工具集合](./python/)
+**[🚀 快速开始](./python/docs/QUICKSTART.md)** | **[📖 详细文档](./python/README.md)** | **[💡 使用示例](./python/docs/examples.md)**
+
 **功能丰富的Python工具集合，涵盖数据处理、文件操作、网络工具、自动化和开发工具**
 
 - 📊 **数据处理**: CSV处理器、JSON处理器、Excel处理器、数据分析器、数据转换器
@@ -13,8 +15,6 @@
 - 🤖 **自动化**: 系统监控器、任务调度器、日志分析器、进程管理器、服务管理器
 - 🛠️ **开发工具**: 代码格式化器、代码生成器、依赖检查器、测试运行器、文档生成器
 
-**[🚀 快速开始](./python/docs/QUICKSTART.md)** | **[📖 详细文档](./python/README.md)** | **[💡 使用示例](./python/docs/examples.md)**
-
 ### ☕ [Java 工具集合](./java/)
 > **开发中，敬请期待！**
 
@@ -22,7 +22,6 @@
 - 结构将与 Python 工具集保持一致
 
 ### [🐚 Shell 工具集合](./shell/)
-
 **[🚀 快速开始](./shell/README.md)** | **[📖 详细文档](./shell/README.md)** | **[💡 使用示例](./shell/README.md)**
 
 **功能丰富的 Bash/Shell 脚本集合，涵盖数据处理、文件操作、Web 工具、自动化和开发工具**
