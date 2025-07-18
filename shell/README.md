@@ -1,5 +1,7 @@
 # Shell 工具集
 
+**[🚀 快速开始](./docs/QUICKSTART.md)** | **[📖 详细文档](./README.md)** | **[💡 使用示例](./docs/examples.md)**
+
 本目录收录常用 Bash/Shell 脚本工具，适用于日常开发、运维、数据处理等场景。
 
 ## 工具类型导航
