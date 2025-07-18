@@ -1,0 +1,23 @@
+# 数据处理工具依赖
+pandas>=1.3.0
+numpy>=1.21.0
+openpyxl>=3.0.0
+
+# 网络工具依赖
+requests>=2.25.0
+beautifulsoup4>=4.9.0
+lxml>=4.6.0
+
+# 系统监控依赖
+psutil>=5.8.0
+
+# 代码格式化依赖
+black>=21.0.0
+flake8>=3.9.0
+
+# 文件监控依赖
+watchdog>=2.1.0
+
+# 其他工具依赖
+tqdm>=4.62.0
+colorama>=0.4.4 

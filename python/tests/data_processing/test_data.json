@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "张三",
+      "email": "zhangsan@example.com",
+      "age": 25,
+      "city": "北京",
+      "hobbies": ["读书", "游泳", "编程"]
+    },
+    {
+      "id": 2,
+      "name": "李四",
+      "email": "lisi@example.com",
+      "age": 30,
+      "city": "上海",
+      "hobbies": ["旅游", "摄影"]
+    },
+    {
+      "id": 3,
+      "name": "王五",
+      "email": "wangwu@example.com",
+      "age": 28,
+      "city": "广州",
+      "hobbies": ["音乐", "电影", "美食"]
+    }
+  ],
+  "settings": {
+    "theme": "dark",
+    "language": "zh-CN",
+    "notifications": {
+      "email": true,
+      "push": false,
+      "sms": true
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "created_at": "2024-01-15T10:30:00Z",
+    "updated_at": "2024-01-20T14:45:00Z"
+  }
+} 

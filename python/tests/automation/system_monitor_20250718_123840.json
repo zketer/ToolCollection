@@ -1,0 +1,38 @@
+[
+  {
+    "cpu": {
+      "usage_percent": 20.5,
+      "count": 8,
+      "frequency_mhz": 3504,
+      "timestamp": "2025-07-18T12:38:41.394798"
+    },
+    "memory": {
+      "total_gb": 16.0,
+      "available_gb": 6.16,
+      "used_gb": 8.13,
+      "usage_percent": 61.5,
+      "timestamp": "2025-07-18T12:38:41.394832"
+    },
+    "disk": {
+      "total_gb": 460.43,
+      "used_gb": 10.48,
+      "free_gb": 84.5,
+      "usage_percent": 2.28,
+      "timestamp": "2025-07-18T12:38:41.394866"
+    },
+    "network": {
+      "bytes_sent_mb": 6846.65,
+      "bytes_recv_mb": 6296.13,
+      "packets_sent": 39969524,
+      "packets_recv": 49526826,
+      "timestamp": "2025-07-18T12:38:41.394991"
+    },
+    "processes": [],
+    "system": {
+      "platform": "darwin",
+      "python_version": "3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]",
+      "boot_time": "2025-07-10T16:27:44",
+      "timestamp": "2025-07-18T12:38:41.427540"
+    }
+  }
+]
